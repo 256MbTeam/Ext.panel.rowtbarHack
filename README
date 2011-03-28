@@ -1,0 +1,19 @@
+= ExtJS hack
+ Add multiple toolbars to a Panel
+
+== Usage
+
+          var panel = new Ext.Panel({
+           title: 'Test Panel',
+           tbar: ['->', 'Hello'],
+           rowtbar: [
+               ['->', 'Hello from top rowTbar'],
+               ['->', 'And second row']
+           ],
+           bbar: [],
+           rowbbar: [
+               ['->', 'Hello from bottom rowTbar'],
+               ['->', 'And second row'],
+               [{xtype: 'button', text: "I'm a button!"}]
+           ]
+        }); 
