@@ -37,6 +37,12 @@ Ext.override(Ext.Panel, {
     getBottomRowToolbar:function(id) {
         return this.getRowToolbar(id, 'b');
     },
+    getTopRowToolbars: function() {
+      return this['rowtbars'];
+    },
+    getBottomRowToolbars: function() {
+      return this['rowbbars'];
+    },
     getRowToolbar: function(id, px) {
         return this['row'+px+'bars'] ? this['row'+px+'bars'][id] : null;
     }
